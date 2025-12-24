@@ -1,0 +1,345 @@
+/* Common CSS for all pages */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f8f9fd;
+    color: #333;
+}
+
+.wraper {
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+    color: hsl(269, 31%, 73%);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+/* Menu */
+.menu {
+    border-bottom: 2px solid #eee;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline;
+    padding: 1.5%;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #ffd700;
+    text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.9);
+}
+
+/* Main */
+.choice-hover {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.choice-hover:hover {
+    color: #2575fc;
+    text-shadow: 2px 2px 10px rgba(37, 117, 252, 0.6);
+}
+
+.main-content {
+    background: linear-gradient(to right, #f0f2f5, #ffffff);
+    padding: 3% 0;
+}
+
+.col-4 {
+    width: 18%;
+    background-color: #fff;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    border-radius: 15px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col-4:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 12px 25px rgba(37, 117, 252, 0.2);
+}
+
+.col-4 h1 {
+    color: #6a11cb;
+    font-size: 32px;
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    color: white;
+    padding: 15px 0;
+    margin-top: 30px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer a:hover {
+    color: white;
+    text-shadow: 0px 0px 10px #ffd700;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Primary Button */
+.btn-primary {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    box-shadow: 0px 5px 12px rgba(37, 117, 252, 0.3);
+    transform: translateY(-2px);
+}
+
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    background: #fff;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table tr:hover {
+    background-color: #f1f7ff;
+    transition: background 0.3s ease;
+}
+
+table td {
+    color: #333;
+}
+
+/* Action Buttons inside table */
+.action-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 2px;
+    font-size: 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.update-btn {
+    background: #28a745;
+    color: white;
+}
+
+.update-btn:hover {
+    background: #218838;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Table */
+.tbl-30 {
+    width: 50%;
+    margin: 20px auto;
+    border-spacing: 12px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Table cells */
+.tbl-30 td {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input fields */
+.tbl-30 input[type="text"],
+.tbl-30 input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* Input focus effect */
+.tbl-30 input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 6px rgba(37, 117, 252, 0.3);
+    outline: none;
+}
+
+/* Submit button */
+.tbl-30 input[type="submit"].btn-primary {
+    display: inline-block;
+    width: 100%;
+    background: linear-gradient(90deg, #847397, #3e4c64);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect on button */
+.tbl-30 input[type="submit"].btn-primary:hover {
+    background: linear-gradient(90deg, #4f9e52, #6a11cb);
+    box-shadow: 0px 5px 12px rgba(109, 121, 142, 0.3);
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+
+
+
+
+.forgot-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #ff5500;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+    color: #d43f00;
+}
+
+
+
+/*.login*/
+.login {
+    border: 1px solid gray;
+    width: 30%;
+    margin: 5% auto;
+    padding: 1%;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Heading */
+.login h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form */
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Fields */
+.login input[type="text"],
+.login input[type="password"] {
+    margin: 5px 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+/* Button */
+.login input[type="submit"] {
+    padding: 12px;
+    margin-top: 5px;
+    background: #007bff;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login input[type="submit"]:hover {
+    background: #0056b3;
+}
